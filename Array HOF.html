@@ -103,7 +103,15 @@ hint) 기존 객체의 특정 프로퍼티를 변경/추가하여 새로운 객�
 todos = todos.map(todo => (todo.id === id ? { ...todo, completed: !todo.completed } : todo));
   return todos;
 
-7.
+7.모든 요소의 completed 프로퍼티 값을 true로 설정.
+function toggleCompletedAll1() {
+  todos = todos.map(todo => ({...todo, completed: true}));
+}
+
+// Object.assign 버전
+function toggleCompletedAll2(id) {
+  todos = todos.map(todo => Object.assign({}, todo, {completed: true}));
+}
 
 8. completed 프로퍼티의 값이 true인 요소의 갯수 구하기
 let todos = [
