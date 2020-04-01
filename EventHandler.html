@@ -6,18 +6,25 @@
   <title>Document</title>
 </head>
 <body>
-  <input type="text" class="inputTodo" placeholder="enter todo!">
-    <button class="add">Add</button>
-    <ul class="todos"></ul>
-</body>
+<input type="text" class="inputTodo">
+<ul class="lists"></ul>
 <script>
   const $inputTodo = document.querySelector('.inputTodo');
-   const $todos = document.querySelector('.todos');
-
-   $inputTodo.onkeyup = function (e) {
-     if (e.keyCode !== 13) return;
-     $todos.innerHTML += `<li>${$inputTodo.value}<li>`;
-     console.log(inputTodo);
-   };
+  const $lists = document.querySelector('.lists');
+  $inputTodo.onkeyup = (e) => {
+    if (e.keyCode !== 13) return;
+    $lists.innerHTML += `<li><input type="checkbox"><span>${$inputTodo.value}</span><button>X</button></li>`; 
+  };
+  $lists.onchange = (e) => {
+    if (e.target.matches('.lists > li > input')) {
+      e.target.nextSibling.style.textDecoration = e.target.checked ? 'line-through' : 'none';
+    }
+  };
+  $lists.onclick = (e) => {
+    if (!e.target.matches('.lists > li > button')) return; {
+      $lists.removeChild(e.target.parentNode);
+      }
+  };
 </script>
+</body>
 </html>
