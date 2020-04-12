@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Todos 3.0</title>
+  <link href="css/style.css" rel="stylesheet">
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Todos</h1>
+    <div class="ver">3.0</div>
+
+    <input class="input-todo" placeholder="What needs to be done?" autofocus>
+    <ul class="nav">
+      <li id="all" class="active">All</li>
+      <li id="active">Active</li>
+      <li id="completed">Completed</li>
+    </ul>
+    <ul class="todos">
+      <!-- <li id="myId" class="todo-item">
+        <input id="ck-myId" class="checkbox" type="checkbox">
+        <label for="ck-myId">HTML</label>
+        <i class="remove-todo far fa-times-circle"></i>
+      </li> -->
+    </ul>
+    <footer>
+      <div class="complete-all">
+        <input class="checkbox" type="checkbox" id="ck-complete-all">
+        <label for="ck-complete-all">Mark all as complete</label>
+      </div>
+      <div class="clear-completed">
+        <button class="btn">Clear completed (<span class="completed-todos">0</span>)</button>
+        <strong class="active-todos">0</strong> items left
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
+
+
+
+//script
+
+
+let todos = [];
+
+const $inputTodo = document.querySelector('.input-todo');
+const $lists = document.querySelector('.todos');
+const $allCheck = document.querySelector('#ck-complete-all');
+const $activeTodos = document.querySelector('.active-todos');
+const $btn = document.querySelector('.btn');
+const $completedTodos = document.querySelector('.completed-todos');
+
+const render = () => {
+  let inner = '';
+  todos.forEach((todo) => {
+    inner += `<li id="${todo.id}" class="todo-item">
+      <input id="ck-${todo.id}" class="checkbox" type="checkbox" ${todo.completed ? 'checked' : ''}>
+      <label for="ck-${todo.id}">${todo.content}</label>
+      <i class="remove-todo far fa-times-circle"></i>
+    </li>`;
+  });
+  $lists.innerHTML = inner;
+  $activeTodos.textContent = todos.length;
+};
+
+const generate = () => (todos.length ? Math.max(...todos.map((todo) => todo.id)) + 1 : 1);
+
+
+$inputTodo.onkeyup = (e) => {
+  if (e.keyCode !== 13) return;
+  if (e.target.value.trim() === '') return;
+  todos = [{ id: generate(), content: e.target.value, completed: false }, ...todos];
+  render();
+  $inputTodo.value = '';
+};
+
+$lists.onclick = (e) => {
+  if (!e.target.matches('.todos > li > i')) return;
+  todos = todos.filter((todo) => todo.id !== +e.target.parentNode.id);
+  render();
+};
+
+$lists.onchange = e => {
+  // e.target.parentNode.id// todos = todos.map(todo => todo.id === +e.target.parentNode.id ? ({ ...todo, completed: e.target.checked }): todo);
+  todos = todos.map(todo => (todo.id === +e.target.parentNode.id ? { ...todo, completed: e.target.checked } : todo
+  ));
+  render();
+};
+
+$allCheck.onchange = e => {
+  console.dir(e.target.checked);
+  todos = todos.map(todo => ({ ...todo, completed: e.target.checked }));
+  render();
+};
+
+$btn.onclick = e => {
+  $completedTodos.textContent = todos.filter(todo => todo.completed).length;
+  todos = todos.filter(todo => !todo.completed);
+
+  render();
+};
