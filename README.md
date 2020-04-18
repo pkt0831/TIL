@@ -14,6 +14,7 @@ Ajax,Promise 등 통신 수업 및 복습.
 StopWatch 등 각종 예제 풀이.
 + 04.15
 Ajax통신 복습 및 StopWatch 보완.
-
++ 04.17 
+조별 Project 계획 구성.
 + 04.18 
 프로젝트 기능구현 공부.
