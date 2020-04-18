@@ -5,15 +5,15 @@ todo 리스트 마스터 요망.
 + 04.08
 todo 리스트 미비한거 공부 및 Promise 예습. 비동기 처리의 어려움을 느낌.
 + 04.09
-Promise 실습 및 이력서 보완점 고침. todo 리스트 반복 학습.
+Promise 실습 및 이력서 보완점 고침. Todo 리스트 반복 학습.
 + 04.11
-todo 리스트 실습 및 다음 수업 예제들 예습.
+Todo 리스트 실습 및 다음 수업 예제들 예습.
 + 04 13
-ajax,promise 등 통신 수업 및 복습.
+Ajax,Promise 등 통신 수업 및 복습.
 + 04.14
-stopWatch 등 각종 예제 풀이.
+StopWatch 등 각종 예제 풀이.
 + 04.15
-ajax통신 복습 및 stopWatch 보완.
+Ajax통신 복습 및 StopWatch 보완.
 
 + 04.18 
 프로젝트 기능구현 공부.
