@@ -7,28 +7,22 @@
 </head>
 <body>
   
-function binarySearch(array, target) {
-  let start = 0;
-  let end = array.length - 1;
-  let mid;
-  while (start <= end) { // start에서 end까지 반복해서 실행한다.
-    mid = Math.floor((start + end) / 2); // mid는 start와 end의 가운데.
-    if (target === array[mid]) return mid;
-    if (target > array[mid]) { // target이 mid보다크면
-      start = mid + 1; // mid보다 + 더한 start가 도출.
-    } else if (target < array[mid]) { // target이 mid보다 적을때
-      end = mid - 1; // end는 mid보다 -1적게 실행.
-    }
-  } return -1;// 그외에 숫자들은 -1로 실행.
+1.짝수와 홀수.
+// if문
+function evenOrOdd(num) {
+  if (num % 2 === 0) {
+    return 'Even';
+  }
+  return 'ODD';
+}
+// 삼항 조건 연산자
+function evenOrOdd(num) {
+  return (num % 2 === 0 ? 'Even' : 'ODD');
 }
 
-console.log(binarySearch([1, 2, 3, 4, 5, 6], 1)); // 0
-console.log(binarySearch([1, 2, 3, 4, 5, 6], 3)); // 2
-console.log(binarySearch([1, 2, 3, 4, 5, 6], 5)); // 4
-console.log(binarySearch([1, 2, 3, 4, 5, 6], 6)); // 5
-console.log(binarySearch([1, 2, 3, 4, 5, 6], -1)); // -1
-console.log(binarySearch([1, 2, 3, 4, 5, 6], 0));
-console.log(binarySearch([1, 2, 3, 4, 5, 6], 7));
+console.log(evenOrOdd(2));  //Even
+console.log(evenOrOdd(3));  //ODD
+console.log(evenOrOdd(1000));  //Even
 
 </body>
 </html>
