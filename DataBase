@@ -1,0 +1,3 @@
+1. country 테이블에서 중복을 제거한 Continent를 조회하세요.
+select DISTINCT(continent) as continent
+from world.country;
