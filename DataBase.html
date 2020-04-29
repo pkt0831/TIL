@@ -1,0 +1,23 @@
+1. country 테이블에서 중복을 제거한 Continent를 조회하세요.
+select DISTINCT(continent) as continent
+from world.country;
+
+
+3.한국 도시중에 인구가 100만이 넘는 도시를 조회하여 인구순으로 내림차순하세요.
+select *
+from city
+where countrycode = "kor" and population > 1000000
+ORDER BY population DESC;
+
+4.city 테이블에서 population이 800만 ~ 1000만 사이인 도시 데이터를 인구수순으로 내림차순하세요.
+select *
+from city
+where population between 800000 and 10000000
+order by population desc;
+
+5. country 테이블에서 1940 ~ 1950년도 사이에 독립한 국가들을 조회하고 독립한 년도 순으로 오름차순하세
+요.
+select *
+from country
+where indepyear between 1940 and 1950
+order by indepyear asc;
