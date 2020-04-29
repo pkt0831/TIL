@@ -21,3 +21,17 @@ select *
 from country
 where indepyear between 1940 and 1950
 order by indepyear asc;
+
+6. contrylanguage 테이블에서 스페인어, 한국어, 영어를 95% 이상 사용하는 국가 코드를 Percentage로 내
+림차순하여 아래와 같이 조회하세요.
+select *
+from countrylanguage
+where language in("english","korean","spanish") and percentage > 95
+order by percentage desc;
+
+7. country 테이블에서 Code가 A로 시작하고 GovernmentForm에 Republic이 포함되는 데이터를 아래와
+같이 조회하세요.
+select *
+from country 
+where governmentform like "%republic"
+order by code asc
