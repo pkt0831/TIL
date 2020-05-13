@@ -30,8 +30,10 @@ json서버,Promise 등 통신 미비된 부분 복습.
 mongodb, 데이터 베이스 문제풀이.
 + 05.04
 React porps,조건부 렌더링.
-
 + 05.11 
 React Props 및 로그인 실습.
 + 05.12
 React Recycle 및 실습. 네트워크 운영체제 기초 이론.
++ 05.13
+React Hook useEffect, useMemo, useCallback, React.memo.
+
