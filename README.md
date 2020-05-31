@@ -52,3 +52,5 @@ React Todo,Tic 다시 만들어보기.
 API를 이용한 연동.
 + 05.28
 React Redux.
++ 05.31
+React 복습.
