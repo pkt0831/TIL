@@ -54,3 +54,5 @@ API를 이용한 연동.
 React Redux.
 + 05.31
 React 복습.
++ 06.01
+운영체제/네트워크, React Reducer.
