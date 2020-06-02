@@ -56,3 +56,5 @@ React Redux.
 React 복습.
 + 06.01
 운영체제/네트워크, React Reducer.
++ 06.02
+React Redux Saga.
