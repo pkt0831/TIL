@@ -59,4 +59,6 @@ React 복습.
 + 06.02
 React Redux Saga.
 + 06.03
-React useReducer 복습.
+React UseReducer 복습.
++ 06.04
+알고리즘 기본개념. 프로그래머스 1레벨.
