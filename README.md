@@ -74,3 +74,5 @@ React Movie, TypeScript.
 Node J.s
 + 06.15
 알고리즘.
++06.16
++ 
