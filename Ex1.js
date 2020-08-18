@@ -39,17 +39,17 @@
 // console.log(sum);
 // console.log(sum);
 // // 8. 1부터 20 미만의 정수 중에서 2 또는 3의 배수가 아닌 수의 총합을 구하시오.
-let sum = 0;
-for (let i = 1; i < 20; i++) {
-  if (i % 2) {
-  }
-  if (i % 2 === 0) {
-    console.log(i);
-  }
-  console.log(i);
-  sum += i;
-}
-console.log(sum);
+// let sum = 0;
+// for (let i = 1; i < 20; i++) {
+//   if (i % 2) {
+//   }
+//   if (i % 2 === 0) {
+//     console.log(i);
+//   }
+//   console.log(i);
+//   sum += i;
+// }
+// console.log(sum);
 
 // // 9. 1부터 20 미만의 정수 중에서 2 또는 3의 배수인 수의 총합을 구하시오.
 // let sum = 0;
