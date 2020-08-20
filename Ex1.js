@@ -43,6 +43,7 @@
 // for (let i = 1; i < 20; i++) {
 //   if ((i % 3 === 0) | (i % 2 === 0)) {
 //     console.log(i);
+//     sum -= i;
 //   }
 // }
 // console.log(sum);
@@ -57,22 +58,20 @@
 // }
 // console.log(sum);
 // // 10. 두 개의 주사위를 던졌을 때, 눈의 합이 6이 되는 모든 경우의 수를 출력하시오.
-// for (let i = 1; i < 7; i++) {
-//   for (let j = 1; j < 7; j++) {
-//     if (i + j === 6) console.log([i, j]);
+// let sum = 6;
+// for (let i = 1; i <= 6; i++) {
+//   for (let j = 1; j <= 6; j++) {
+//     sum = i + j;
 //   }
+//   console.log(sum);
 // }
-
 // // 11. 삼각형 출력하기 - pattern 1
-// let str = '// 11. 삼각형 출력하기 - pattern 1 \n';
-// const addstr = '*';
-// for (let i = 0; i < 5; i++) {
-//   for (let j = 0; j < i + 1; j++) {
-//     str += addstr;
-//   }
-//   str += '\n';
-// }
-// console.log(str);
+let star = '\n';
+let add = '';
+for (let i = 0; i < 5; i++) {
+  add += i;
+}
+console.log(star);
 
 // // 12. 삼각형 출력하기 - pattern 2
 // let str = '// 12. 삼각형 출력하기 - pattern 2 v1 \n';
