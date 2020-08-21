@@ -41,10 +41,7 @@
 // // 8. 1부터 20 미만의 정수 중에서 2 또는 3의 배수가 아닌 수의 총합을 구하시오.
 // let sum = 0;
 // for (let i = 1; i < 20; i++) {
-//   if ((i % 3 === 0) | (i % 2 === 0)) {
-//     console.log(i);
-//     sum -= i;
-//   }
+//   sum += (i % 2 === 0) | (i % 3 === 0) ? 0 : i;
 // }
 // console.log(sum);
 
@@ -58,22 +55,22 @@
 // }
 // console.log(sum);
 // // 10. 두 개의 주사위를 던졌을 때, 눈의 합이 6이 되는 모든 경우의 수를 출력하시오.
-// let sum = 6;
 // for (let i = 1; i <= 6; i++) {
 //   for (let j = 1; j <= 6; j++) {
-//     sum = i + j;
+//     if (i + j === 6) {
+//       console.log([i, j]);
+//     }
 //   }
-//   console.log(sum);
 // }
 // // 11. 삼각형 출력하기 - pattern 1
-let star = '\n';
-let add = '';
-for (let i = 0; i < 5; i++) {
+let star = '/n';
+let add = '*';
+for (let i = 0; i < 5 i ++) {
   add += i;
+  console.log(add);
 }
 console.log(star);
-
-// // 12. 삼각형 출력하기 - pattern 2
+// 12. 삼각형 출력하기 - pattern 2
 // let str = '// 12. 삼각형 출력하기 - pattern 2 v1 \n';
 // let addstr = '';
 // for (let i = 0; i < 5; i++) {

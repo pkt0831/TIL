@@ -48,123 +48,123 @@ for (let i = 1; i < 20; i++) {
 }
 console.log(sum);
 // 9. 1부터 20 미만의 정수 중에서 2 또는 3의 배수인 수의 총합을 구하시오.
-let sum = 0;
-for (let i = 1; i < 20; i++) {
-  sum += i % 2 ? (i % 3 ? 0 : i) : i;
-}
-console.log(sum);
+// let sum = 0;
+// for (let i = 1; i < 20; i++) {
+//   sum += i % 2 ? (i % 3 ? 0 : i) : i;
+// }
+// console.log(sum);
 
 // 10. 두 개의 주사위를 던졌을 때, 눈의 합이 6이 되는 모든 경우의 수를 출력하시오.
-for (let i = 1; i < 7; i++) {
-  for (let j = 1; j < 7; j++) {
-    if (i + j === 6) console.log([i, j]);
-  }
-}
+// for (let i = 1; i < 7; i++) {
+//   for (let j = 1; j < 7; j++) {
+//     if (i + j === 6) console.log([i, j]);
+//   }
+// }
 
-// 11. 삼각형 출력하기 - pattern 1
-let str = '// 11. 삼각형 출력하기 - pattern 1 \n';
-const addstr = '*';
-for (let i = 0; i < 5; i++) {
-  for (let j = 0; j < i + 1; j++) {
-    str += addstr;
-  }
-  str += '\n';
-}
-console.log(str);
+// // 11. 삼각형 출력하기 - pattern 1
+// let str = '// 11. 삼각형 출력하기 - pattern 1 \n';
+// const addstr = '*';
+// for (let i = 0; i < 5; i++) {
+//   for (let j = 0; j < i + 1; j++) {
+//     str += addstr;
+//   }
+//   str += '\n';
+// }
+// console.log(str);
 
-// 12. 삼각형 출력하기 - pattern 2
-let str = '// 12. 삼각형 출력하기 - pattern 2 v1 \n';
-let addstr = '';
-for (let i = 0; i < 5; i++) {
-  addstr += i ? ' ' : '';
+// // 12. 삼각형 출력하기 - pattern 2
+// let str = '// 12. 삼각형 출력하기 - pattern 2 v1 \n';
+// let addstr = '';
+// for (let i = 0; i < 5; i++) {
+//   addstr += i ? ' ' : '';
 
-  str += addstr;
+//   str += addstr;
 
-  for (let j = i; j < 5; j++) {
-    str += '*';
-  }
-  str += '\n';
-}
-console.log(str);
+//   for (let j = i; j < 5; j++) {
+//     str += '*';
+//   }
+//   str += '\n';
+// }
+// console.log(str);
 
-let str = '// 12. 삼각형 출력하기 - pattern 2 v2 \n';
-for (let i = 0; i < 5; i++) {
-  for (let j = i; j > 0; j--) {
-    str += ' ';
-  }
-  for (let j = i; j < 5; j++) {
-    str += '*';
-  }
-  str += '\n';
-}
-console.log(str);
+// let str = '// 12. 삼각형 출력하기 - pattern 2 v2 \n';
+// for (let i = 0; i < 5; i++) {
+//   for (let j = i; j > 0; j--) {
+//     str += ' ';
+//   }
+//   for (let j = i; j < 5; j++) {
+//     str += '*';
+//   }
+//   str += '\n';
+// }
+// console.log(str);
 
-// 13. 삼각형 출력하기 - pattern 3
-let str = '// 13. 삼각형 출력하기 - pattern 3 v1 \n';
-for (let i = 0; i < 5; i++) {
-  for (let j = 0; j < 5 - i; j++) {
-    str += '*';
-  }
-  str += '\n';
-}
-console.log(str);
+// // 13. 삼각형 출력하기 - pattern 3
+// let str = '// 13. 삼각형 출력하기 - pattern 3 v1 \n';
+// for (let i = 0; i < 5; i++) {
+//   for (let j = 0; j < 5 - i; j++) {
+//     str += '*';
+//   }
+//   str += '\n';
+// }
+// console.log(str);
 
-let str = '// 13. 삼각형 출력하기 - pattern 3 v2 \n';
-for (let i = 5; i > 0; i--) {
-  for (let j = i; j > 0; j--) {
-    str += '*';
-  }
-  str += '\n';
-}
-console.log(str);
+// let str = '// 13. 삼각형 출력하기 - pattern 3 v2 \n';
+// for (let i = 5; i > 0; i--) {
+//   for (let j = i; j > 0; j--) {
+//     str += '*';
+//   }
+//   str += '\n';
+// }
+// console.log(str);
 
-// 14. 삼각형 출력하기 - pattern 4
-let str = '// 14. 삼각형 출력하기 - pattern 4 \n';
-let addstr = '';
-for (let i = 5; i > 0; i--) {
-  for (let j = i - 1; j > 0; j--) {
-    str += ' ';
-  }
-  addstr += '*';
-  str += addstr;
-  str += '\n';
-}
-console.log(str);
+// // 14. 삼각형 출력하기 - pattern 4
+// let str = '// 14. 삼각형 출력하기 - pattern 4 \n';
+// let addstr = '';
+// for (let i = 5; i > 0; i--) {
+//   for (let j = i - 1; j > 0; j--) {
+//     str += ' ';
+//   }
+//   addstr += '*';
+//   str += addstr;
+//   str += '\n';
+// }
+// console.log(str);
 
-// 15. 정삼각형 출력하기
-let str = '// 15. 정삼각형 출력하기 \n';
-let addstr = '*';
-for (let i = 0; i < 5; i++) {
-  for (let j = 4 - i; j > 0; j--) {
-    str += ' ';
-  }
-  addstr += i ? '**' : '';
-  str = str + addstr + '\n';
-}
-console.log(str);
+// // 15. 정삼각형 출력하기
+// let str = '// 15. 정삼각형 출력하기 \n';
+// let addstr = '*';
+// for (let i = 0; i < 5; i++) {
+//   for (let j = 4 - i; j > 0; j--) {
+//     str += ' ';
+//   }
+//   addstr += i ? '**' : '';
+//   str = str + addstr + '\n';
+// }
+// console.log(str);
 
-// 16. 정삼각형 출력하기
-let str = '// 16. 정삼각형 출력하기 (역방향) v1 \n';
-let addstr = '';
-for (let i = 0; i < 5; i++) {
-  addstr += i ? ' ' : '';
-  str += addstr;
+// // 16. 정삼각형 출력하기
+// let str = '// 16. 정삼각형 출력하기 (역방향) v1 \n';
+// let addstr = '';
+// for (let i = 0; i < 5; i++) {
+//   addstr += i ? ' ' : '';
+//   str += addstr;
 
-  for (let j = 9 - 2 * i; j > 0; j--) {
-    str += '*';
-  }
-  str += '\n';
-}
-console.log(str);
+//   for (let j = 9 - 2 * i; j > 0; j--) {
+//     str += '*';
+//   }
+//   str += '\n';
+// }
+// console.log(str);
 
-let str = '// 16. 정삼각형 출력하기 (역방향) v2 \n';
-for (let i = 0; i < 5; i++) {
-  for (let j = 0; j < i; j++) {
-    str += ' ';
-  }
-  for (let j = 9 - 2 * i; j > 0; j--) {
-    str += '*';
-  }
-  str += '\n';
-}
-console.log(str);
+// let str = '// 16. 정삼각형 출력하기 (역방향) v2 \n';
+// for (let i = 0; i < 5; i++) {
+//   for (let j = 0; j < i; j++) {
+//     str += ' ';
+//   }
+//   for (let j = 9 - 2 * i; j > 0; j--) {
+//     str += '*';
+//   }
+//   str += '\n';
+// }
+// console.log(str);
