@@ -63,11 +63,15 @@
 //   }
 // }
 // // 11. 삼각형 출력하기 - pattern 1
-let star = '/n';
-let add = '*';
-for (let i = 0; i < 5 i ++) {
-  add += i;
-  console.log(add);
+let str = '/n';
+let star = '*';
+for (let i = 0; i < 5; i++) {
+  for (let j = 0; j < i; j++) {
+    star += i;
+    str += star;
+    console.log(star);
+    console.log(str);
+  }
 }
 console.log(star);
 // 12. 삼각형 출력하기 - pattern 2
@@ -98,14 +102,10 @@ console.log(star);
 // console.log(str);
 
 // // 13. 삼각형 출력하기 - pattern 3
-// let str = '// 13. 삼각형 출력하기 - pattern 3 v1 \n';
-// for (let i = 0; i < 5; i++) {
-//   for (let j = 0; j < 5 - i; j++) {
-//     str += '*';
-//   }
-//   str += '\n';
+// let str = '/n';
+// for (let i =0; i < 5; i++;) {
+
 // }
-// console.log(str);
 
 // let str = '// 13. 삼각형 출력하기 - pattern 3 v2 \n';
 // for (let i = 5; i > 0; i--) {
