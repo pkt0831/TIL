@@ -62,30 +62,30 @@ console.log(sum);
 // }
 
 // // 11. 삼각형 출력하기 - pattern 1
-let str = '// 11. 삼각형 출력하기 - pattern 1 \n';
-const addstr = '*';
-for (let i = 0; i < 5; i++) {
-  for (let j = 0; j < i + 1; j++) {
-    str += addstr;
-  }
-  str += '\n';
-}
-console.log(str);
-
-// // 12. 삼각형 출력하기 - pattern 2
-// let str = '// 12. 삼각형 출력하기 - pattern 2 v1 \n';
-// let addstr = '';
+// let str = '// 11. 삼각형 출력하기 - pattern 1 \n';
+// const addstr = '*';
 // for (let i = 0; i < 5; i++) {
-//   addstr += i ? ' ' : '';
-
-//   str += addstr;
-
-//   for (let j = i; j < 5; j++) {
-//     str += '*';
+//   for (let j = 0; j < i + 1; j++) {
+//     str += addstr;
 //   }
 //   str += '\n';
 // }
 // console.log(str);
+
+// // 12. 삼각형 출력하기 - pattern 2
+let str = '// 12. 삼각형 출력하기 - pattern 2 v1 \n';
+let addstr = '';
+for (let i = 0; i < 5; i++) {
+  addstr += i ? ' ' : '';
+
+  str += addstr;
+
+  for (let j = i; j < 5; j++) {
+    str += '*';
+  }
+  str += '\n';
+}
+console.log(str);
 
 // let str = '// 12. 삼각형 출력하기 - pattern 2 v2 \n';
 // for (let i = 0; i < 5; i++) {
