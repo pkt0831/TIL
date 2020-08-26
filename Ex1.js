@@ -73,7 +73,7 @@ for (let i = 0; i < 5; i++) {
 }
 console.log(str);
 // 12. 삼각형 출력하기 - pattern 2
-// let str = '\n';
+// let str = '\n';d
 // let star = '*';
 // for (let i = 5; i > 0; i--) {
 //   str += star;
