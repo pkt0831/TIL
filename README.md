@@ -1,9 +1,8 @@
 
 + 04.07
-todo 리스트를 JSON을 이용해서 가상의 백엔드 서버를 설정하고 서버 호출 실습.
-todo 리스트 마스터 요망. 
+todo 리스트를 JSON을 이용해서 가상의 백엔드 서버를 설정하고 서버 호출 실습. 
 + 04.08
-todo 리스트 미비한거 공부 및 Promise 예습. 비동기 처리의 어려움을 느낌.
+todo 리스트 미비한거 공부 및 Promise 예습.
 + 04.09
 Promise 실습 및 이력서 보완점 고침. Todo 리스트 반복 학습.
 + 04.11
@@ -74,8 +73,8 @@ React Movie, TypeScript.
 Node J.s
 + 06.15
 알고리즘.
-+06.16
-+ HTTP,HTTPS 등 네트워크,운영체제.
++ 06.16
+HTTP,HTTPS 등 네트워크,운영체제.
 + 06.18
 알고리즘 트리,큐
 + 06.20
@@ -86,6 +85,12 @@ React 총복습.
 최종 프로젝트 디렉터리 구조, 컴포넌트 네이밍.
 + 06.25
 최종 프로젝트 기능별 정리,reducer 설계.
++ 06.26
+최종 프로젝트 기획 발표 자료 준비 (코딩 컨벤션)
++ 06.27
+최종 프로젝트 준비.(Reducer,Redux 복습).
++ 06.28
+인증방식(JWT), Styled-components.
 + 06.30
 최종 프로젝트 StyledComponents.
 + 07.03
@@ -100,5 +105,25 @@ useRef,useState.
 useReducer.
 + 07.12
 최종 프로젝트 Footer.
++ 07.17
+최종 프로젝트 발표.
++ 07.28
+React Redux.
++ 07.29
+React Redux Middle Ware.
++ 07.30
+Javascript Algorithm.
++ 07.31
+react State.
++ 08.03
+Javascript Promise.
++ 08.04 
+Javascript 실행 컨텍스트, Algoritm.
++ 08.05 
+HTTPS를 통한 배포.
++ 08.14
+Algorithm
 + 08.21
 Array HOF.
++ 08.27
+Programmers Algorithm

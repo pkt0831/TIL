@@ -72,13 +72,20 @@
 //   str += '\n';
 // }
 // console.log(str);
+
 // 12. 삼각형 출력하기 - pattern 2
 let str = '\n';
 let star = '*';
-for (let i = 0; i < 6; i++) {
-  str += i;
-  console.log(i);
+for (let i = 6; i > 0; i--) {
+  for (let j = 6; j > i; j--) {
+    str += star;
+    console.log(i);
+    console.log(j);
+    console.log(str);
+  }
+  str += '\n';
 }
+console.log(str);
 
 // // 13. 삼각형 출력하기 - pattern 3
 // let str = '/n';
