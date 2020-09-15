@@ -86,7 +86,7 @@ for (let i = 6; i > 0; i--) {
   str += '\n';
 console.log(str);
 console.log(i);
-a1
+
 // // 13. 삼각형 출력하기 - pattern 3
 // let str = '/n';
 // for (let i =0; i < 5; i++;) {
