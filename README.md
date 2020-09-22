@@ -127,3 +127,5 @@ Algorithm
 Array HOF.
 + 08.27
 Programmers Algorithm
++ 09.22
+Javascript DOM
