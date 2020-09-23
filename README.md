@@ -129,3 +129,5 @@ Array HOF.
 Programmers Algorithm
 + 09.22
 Javascript DOM
++ 09.24
+Javascript Promise
