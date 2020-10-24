@@ -161,3 +161,5 @@ React DOM
 React Hooks
 + 10.22
 React immer
++ 10.24
+React Router
