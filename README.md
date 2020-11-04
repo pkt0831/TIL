@@ -163,4 +163,7 @@ React Hooks
 React immer
 + 10.24
 React Router
-+ Javascript Async/Await
++ 10.25
+Javascript Async/Await
++ 11.04
+Javascript DOM
