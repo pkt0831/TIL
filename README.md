@@ -167,5 +167,7 @@ React Router
 Javascript Async/Await
 + 11.04
 Javascript DOM
-+ 11.05
++ 11.08
 Javascript 함수
++ 11.15
+React Reducer
