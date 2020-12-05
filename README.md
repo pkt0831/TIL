@@ -183,3 +183,5 @@ React Router
 React Props
 + 11.29
 Javascritp Ajax
++ 12.05
+Javascript Closer
